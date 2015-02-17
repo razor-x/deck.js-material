@@ -1,118 +1,59 @@
-# Sass Package Skeleton
+# deck.js Material Theme
 
-<!--
-[![Bower Version](https://img.shields.io/bower/v/sass-package.svg)](http://bower.io/search/?q=sass-package)
--->
+[![Bower Version](https://img.shields.io/bower/v/deck.js-material.svg)](http://bower.io/search/?q=deck.js-material)
 [![MIT License](https://img.shields.io/badge/license-MIT-red.svg)](./LICENSE.txt)
-[![Dependency Status](https://img.shields.io/gemnasium/razor-x/sass-package.svg)](https://gemnasium.com/razor-x/sass-package)
-[![Build Status](https://img.shields.io/travis/razor-x/sass-package.svg)](https://travis-ci.org/razor-x/sass-package)
+[![Dependency Status](https://img.shields.io/gemnasium/razor-x/deck.js-material.svg)](https://gemnasium.com/razor-x/deck.js-material)
+[![Build Status](https://img.shields.io/travis/razor-x/deck.js-material.svg)](https://travis-ci.org/razor-x/deck.js-material)
 
-Use this project freely as a base for your Sass packages.
+Material theme for deck.js.
 
 ## Description
 
-### Features
+### Requirements
 
-* [Bower] package structure.
-* [Rake] and [Guard] tasks for development.
-* Gem management with [Bundler].
-* [Travis CI] ready.
-* [EditorConfig].
-* Badges from [Shields.io]!
+[Bower], [Bourbon], [Neat], and [deck.js].
 
-[Bower]: http://bower.io/
-[Bundler]: http://bundler.io/
-[EditorConfig]: http://editorconfig.org/
-[Guard]: http://guardgem.org/
-[Rake]: https://github.com/jimweirich/rake
-[Shields.io]: http://shields.io/
-[Travis CI]: https://travis-ci.org/
+[Bourbon]: http://bourbon.io/
+[deck.js]: http://imakewebthings.com/deck.js/
+[Neat]: http://neat.bourbon.io/
 
 ### Usage
 
-This software can be used freely, see [The Unlicense].
-The MIT License text appearing in this software is for
-demonstration purposes only and does not apply to this software.
+This theme assumes you have already imported
+Bourbon and Neat into your project.
+Additionally, you should import the reset theme
+included with deck.js.
 
-1. Clone this repository or download a [release][Releases].
+For example:
 
-2. Customize this README.
-   - Set the title and summary text.
-   - Replace the Description section.
-   - Update the Source section.
-   - Update the Contributing section.
-   - Remove or update the badges.
-
-3. Set the copyright year and owner in `LICENSE.txt`.
-
-4. Customize `bower.json`.
-
-5. Replace any remaining instances of the placeholder package name.
-   You can replace the placeholder package name with your own using
-
-````bash
-$ git ls-files -z | xargs -0 sed -i 's/sass-package/your-package/g'
-$ git ls-files -z | xargs -0 sed -i 's/razor-x/your_username/g'
-````
-
-Note that `CHANGELOG.md` is just a template for this skeleton.
-The actual changes for this project are documented in the commit history
-and summarized under [Releases].
-
-[Releases]: https://github.com/razor-x/sass-package/releases
-[The Unlicense]: http://unlicense.org/UNLICENSE
-
-#### Add future update support
-
-If you want to merge in future updates from this skeleton and have your own origin,
-set up a separate branch to track this.
-
-````bash
-$ git remote rename origin upstream
-$ git branch sass-package
-$ git branch -u upstream/master sass-package
-````
-
-Then add an origin and push master
-
-````bash
-$ git remote add origin git@github.com:your_username/your-package.git
-$ git push -u origin master
-````
-
-Now, the `sass-package` branch will pull changes from this project,
-which you can then merge into your other branches.
-
-If you later clone your repo you will need to create the update branch again.
-
-````bash
-$ git remote add upstream https://github.com/razor-x/sass-package.git
-$ git fetch upstream
-$ git checkout -b sass-package upstream/master
+````sass
+@import bourbon
+@import neat
+@import deck.js/themes/style/reset
+@import deck.js-material
 ````
 
 ## Installation
 
-The recommended method is to add this as a dependency
+Add this as a dependency
 to your project using [Bower] with
 
 ````bash
-$ bower install --save sass-package
+$ bower install --save deck.js-material
 ````
 
-Alternatively, you can download a [release][Releases]
-or clone the repository directly.
+[Bower]: http://bower.io/
 
 ## Development and Testing
 
 ### Source Code
 
-The [sass-package](https://github.com/razor-x/sass-package)
+The [deck.js-material](https://github.com/razor-x/deck.js-material)
 source is hosted on GitHub.
 To clone the project run
 
 ````bash
-$ git clone https://github.com/razor-x/sass-package.git
+$ git clone https://github.com/razor-x/deck.js-material.git
 ````
 
 ### Requirements
@@ -147,7 +88,7 @@ Please submit and comment on bug reports and feature requests.
 
 To submit a patch:
 
-1. Fork it (https://github.com/razor-x/sass-package/fork).
+1. Fork it (https://github.com/razor-x/deck.js-material/fork).
 2. Create your feature branch (`git checkout -b my-new-feature`).
 3. Make changes.
 4. Commit your changes (`git commit -am 'Add some feature'`).

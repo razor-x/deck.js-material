@@ -1,17 +1,19 @@
 {
-  "name": "sass-package",
+  "name": "deck.js-material",
   "version": "0.0.0",
   "authors": [
-    "Your Name <you@example.com>"
+    "Evan Sosenko <razorx@evansosenko.com>"
   ],
-  "description": "Package description.",
+  "description": "Material theme for deck.js.",
   "main": "stylesheets/main.sass",
   "keywords": [
+    "deck.js",
+    "theme",
     "sass",
     "css"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/razor-x/sass-package",
+  "homepage": "https://github.com/razor-x/deck.js-material",
   "ignore": [
     "**/.*",
     "node_modules",
