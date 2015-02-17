@@ -84,12 +84,8 @@ Run `rake -T` to see all Rake tasks.
 ````
 rake build  # Compile Sass to CSS
 rake clean  # Remove build directory
+rake watch  # Have Sass watch for changes
 ````
-
-### Guard
-
-Guard will watch the sass files under `src` and compile on changes.
-Just run `guard`.
 
 ## Contributing
 
