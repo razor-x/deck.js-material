@@ -47,7 +47,7 @@ demonstration purposes only and does not apply to this software.
 
 4. Customize `bower.json`.
 
-5. Replace the placeholder package name.
+5. Replace any remaining instances of the placeholder package name.
    You can replace the placeholder package name with your own using
 
 ````bash
@@ -93,6 +93,18 @@ $ git checkout -b sass-package upstream/master
 
 ## Installation
 
+The recommended method is to add this as a dependency
+to your project using [Bower] with
+
+````bash
+$ bower install --save sass-package
+````
+
+Alternatively, you can download a [release][Releases]
+or clone the repository directly.
+
+## Development and Testing
+
 ### Source Code
 
 The [sass-package](https://github.com/razor-x/sass-package)
@@ -102,6 +114,18 @@ To clone the project run
 ````bash
 $ git clone https://github.com/razor-x/sass-package.git
 ````
+
+### Requirements
+
+You will need [Ruby] ≥ 2 with [Bundler] and [Bower].
+
+Install the development dependencies with
+
+````bash
+$ bundle
+````
+
+[Ruby]: https://www.ruby-lang.org/
 
 ### Rake
 
@@ -114,7 +138,7 @@ rake clean  # Remove build directory
 
 ### Guard
 
-Guard will watch the sass files under `src` and complile on changes.
+Guard will watch the sass files under `src` and compile on changes.
 Just run `guard`.
 
 ## Contributing
