@@ -26,14 +26,14 @@ end
 desc 'Compile Sass to CSS'
 task :build do
   sh 'bundle', 'exec', 'sass',
-     '--update', 'stylesheets:build',
+     '--update', 'stylesheets/material.sass:build/material.css',
      *load_paths
 end
 
 desc 'Have Sass watch for changes'
 task :watch do
   spawn 'bundle', 'exec', 'sass',
-        '--watch', 'stylesheets:build',
+        '--watch', 'stylesheets/material.sass:build/material.css',
         *load_paths
 end
 
