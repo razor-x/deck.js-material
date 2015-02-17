@@ -31,7 +31,6 @@
     "neat": "~1.7.1"
   },
   "dependencies": {
-    "material-design-preloader": "1.1.0",
     "google-material-color": "1.2.0",
     "paper-shadows": "1.0.0"
   }
