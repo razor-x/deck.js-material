@@ -1,0 +1,139 @@
+//
+// Deck Style
+//
+
+body
+  font-size: $em-base
+  background-color: $background-color
+
+a
+  text-decoration: none
+  color: $anchor-color
+
+  &:hover
+    color: $anchor-color-hover
+
+button
+  +material-button
+
+article.deck-container
+  font-family: $slide-font-mobile
+  background-color: $background-color
+  color: $slide-color
+
+  @media #{$xga}
+    font-family: $slide-font
+
+  h1, h2, h3, h4, h5, h6
+    font-family: $header-font
+    font-weight: $header-font-weight
+
+  h1
+    top: 30vh
+    font-size: 2rem
+    color: $deck-title-color
+
+    @media #{$xga}
+      font-size: 4rem
+
+  h2
+    position: relative
+    padding-left: rem(5)
+    padding-top: initial
+    background-color: $slide-title-background
+    border: none
+    +slide-title-style
+    +shadow-level(1)
+
+    @media #{$xga}
+      font-size: 3.5rem
+
+    &::after
+      display: none
+
+      @media #{$xga}
+        display: inline
+        position: absolute
+        bottom: rem(5)
+        right: $side-margin
+        font-size: 3rem
+
+  header.slide
+    ul.authors
+      position: absolute
+      top: 50vh
+      width: 100vw
+      margin: 0
+      text-align: center
+      list-style-type: none
+      font-family: $author-font
+      font-weight: $author-font-weight
+      color: $author-color
+
+      li
+        padding: 0
+
+      a
+        color: $author-color
+
+      .author
+        font-size: 2rem
+
+        @media #{$xga}
+          font-size: 4rem
+
+      .connector
+        font-size: 1.5rem
+
+      .coauthor
+        font-size: 2rem
+
+        @media #{$xga}
+          font-size: 2.5rem
+
+    .url
+      display: none
+
+      @media #{$xga}
+        display: block
+        position: absolute
+        bottom: $bottom-margin
+        left: $side-margin
+
+        .qrcode
+          width: $qrcode-container-size
+          height: $qrcode-container-size
+          +retina-image('qr', $qrcode-size $qrcode-size, $asset-pipeline: true)
+          background-size: $qrcode-size $qrcode-size
+          background-position: center
+          background-repeat: no-repeat
+          border-radius: rem(10)
+          +shadow-level(2)
+
+        .short_url
+          display: block
+          font-family: $header-font
+          font-size: 4rem
+          font-weight: $header-font-weight
+
+    .logos
+      position: absolute
+      bottom: $bottom-margin
+      right: $side-margin
+
+//
+// Deck UI
+//
+
+.deck-status
+  position: absolute
+  top: rem(2)
+  right: $side-margin
+  z-index: 50
+  +slide-title-style
+
+  @media #{$xga}
+    top: initial
+    right: $side-margin
+    bottom: $bottom-margin
+    color: $slide-color

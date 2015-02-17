@@ -1,0 +1,64 @@
+//
+// Color Palette
+//
+
+$primary-palette: Indigo
+$accent-palette: Pink
+
+@function color($shade: 500)
+  @return palette($primary-palette, $shade)
+
+@function accent($shade: 500)
+  @return palette($accent-palette, $shade)
+
+@function black($shade: 500)
+  @return palette(Black, $shade)
+
+@function white($shade: 500)
+  @return palette(White, $shade)
+
+//
+// Fonts
+//
+
+$font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif !default
+$font-open_sans: "Open Sans", $font-family !default
+$font-roboto: "Roboto", $font-family !default
+
+//
+// Variables
+//
+
+$background-color: color(50) !default
+$anchor-color: color() !default
+$anchor-color-hover: accent() !default
+
+$header-font: $font-roboto !default
+$header-font-weight: 300 !default
+
+$slide-font: $font-open_sans !default
+$slide-font-mobile: $font-roboto !default
+$slide-color: black() !default
+
+$side-margin: 1rem !default
+$bottom-margin: rem(30) !default
+
+$deck-title-color: black() !default
+
+$author-font: $header-font !default
+$author-font-weight: $header-font-weight !default
+$author-color: black() !default
+
+$slide-title-color: white() !default
+$slide-title-background: color() !default
+
+$qrcode-size: 270px !default
+$qrcode-container-size: $qrcode-size - 10px !default
+
+//
+// Media Queries
+//
+
+$medium: 'only screen and (min-width: 641px)' !default
+$xga: 'only screen and (min-width: 1024px)' !default
+$wxga: 'only screen and (min-width: 1280px)' !default

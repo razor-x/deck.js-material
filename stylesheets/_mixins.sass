@@ -1,0 +1,48 @@
+//
+// Mixins
+//
+
+=material-button($color: black(), $background: accent())
+  padding: 7px 10px
+  line-height: 20px
+  border: 0 none
+  border-radius: rem(2)
+  color: $color
+  background-color: $background
+  cursor: pointer
+  +transition(all 0.3s ease 0s)
+
+  &:hover
+    color: darken($color, 100%)
+    background-color: lighten($background, 100%)
+
+=rescale-background($scale, $width, $height)
+  height: $scale * $height
+  width: $scale * $width
+  background-size: $scale * $width $scale * $height
+
+=vector-img($src, $height, $ratio: 1, $scale-xga: 1.5, $scale-wxga: 2)
+  $width: $ratio * $height
+  display: block
+  height: $height
+  width: 100vw
+  background-image: image-url($src)
+  background-size: $width $height
+  background-position: center
+  background-repeat: no-repeat
+
+  @media #{$xga}
+    +rescale-background($scale-xga, $width, $height)
+
+  @media #{$wxga}
+    +rescale-background($scale-wxga, $width, $height)
+
+=logo($src, $ratio, $type)
+  @if $type == 'svg'
+    +vector-img($src, 50px, $ratio)
+
+=slide-title-style
+  font-family: $header-font
+  font-weight: $header-font-weight
+  font-size: 1.5rem
+  color: $slide-title-color
