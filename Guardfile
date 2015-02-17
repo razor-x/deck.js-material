@@ -1,1 +1,1 @@
-guard 'sass', input: 'stylesheets', output: 'build'
+guard :sass, input: 'stylesheets', output: 'build'
