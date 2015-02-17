@@ -13,9 +13,18 @@ Material theme for deck.js.
 
 [Bower], [Bourbon], [Neat], and [deck.js].
 
+Additionally, this theme uses the [Roboto] and [Open Sans] fonts,
+so you should provide them, e.g., with [Web Font Loader].
+
+Other dependencies are managed via Bower.
+Make sure your Bower components directory is in your Sass load path.
+
 [Bourbon]: http://bourbon.io/
 [deck.js]: http://imakewebthings.com/deck.js/
 [Neat]: http://neat.bourbon.io/
+[Open Sans]: https://www.google.com/fonts/specimen/Open+Sans
+[Roboto]: https://www.google.com/fonts/specimen/Roboto
+[Web Font Loader]: https://developers.google.com/fonts/docs/webfont_loader
 
 ### Usage
 
@@ -24,7 +33,7 @@ Bourbon and Neat into your project.
 Additionally, you should import the reset theme
 included with deck.js.
 
-For example:
+For example, this will work with most modern build systems,
 
 ````sass
 @import bourbon
