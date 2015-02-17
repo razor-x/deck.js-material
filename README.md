@@ -20,7 +20,6 @@ Use this project freely as a base for your Sass packages.
 * [EditorConfig].
 * Badges from [Shields.io]!
 
-[Bower]: http://bower.io/
 [Bundler]: http://bundler.io/
 [EditorConfig]: http://editorconfig.org/
 [Guard]: http://guardgem.org/
@@ -102,6 +101,8 @@ $ bower install --save sass-package
 
 Alternatively, you can download a [release][Releases]
 or clone the repository directly.
+
+[Bower]: http://bower.io/
 
 ## Development and Testing
 
