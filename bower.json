@@ -21,7 +21,6 @@
     "build",
     "Gemfile",
     "Gemfile.lock",
-    "Guardfile",
     "Rakefile"
   ]
 }
