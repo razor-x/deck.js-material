@@ -1,0 +1,27 @@
+{
+  "name": "sass-package",
+  "version": "0.0.0",
+  "authors": [
+    "Your Name <you@example.com>"
+  ],
+  "description": "Package description.",
+  "main": "stylesheets/main.sass",
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/razor-x/sass-package",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build",
+    "Gemfile",
+    "Gemfile.lock",
+    "Guardfile",
+    "Rakefile"
+  ]
+}

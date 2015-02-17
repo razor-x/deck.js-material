@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.2.0
+cache: bundler
+sudo: false
+
+before_install:
+  - 'echo ''gem: --no-document'' > ~/.gemrc'
+
+script: bundle exec rake travis
