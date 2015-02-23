@@ -129,7 +129,7 @@ article.deck-container
 .deck-status
   position: absolute
   top: rem(2)
-  right: $side-margin
+  right: $side-margin + rem(35)
   z-index: 50
   +slide-title-style
 
@@ -138,3 +138,16 @@ article.deck-container
     right: $side-margin
     bottom: $bottom-margin
     color: $slide-color
+
+.notes-link
+  position: absolute
+  top: rem(4)
+  right: $side-margin
+  z-index: 50
+  +vector-img("#{$image-path}/ic_description_48px-white.svg", 25px)
+
+  @media #{$xga}
+    top: initial
+    left: $side-margin
+    bottom: $bottom-margin
+    background-image: image-url('material-design-icons/action/svg/production/ic_description_48px.svg', 30px)

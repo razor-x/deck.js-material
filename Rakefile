@@ -3,6 +3,7 @@ task travis: :build
 
 # Add sass load paths here.
 load_paths = %w(
+  images
 )
 
 # Automatically add bower_components to the load path.
