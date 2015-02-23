@@ -100,21 +100,22 @@ article.deck-container
         bottom: $bottom-margin
         left: $side-margin
 
-        .qrcode
-          width: $qrcode-container-size
-          height: $qrcode-container-size
-          +retina-image('qr', $qrcode-size $qrcode-size, $asset-pipeline: true)
-          background-size: $qrcode-size $qrcode-size
-          background-position: center
-          background-repeat: no-repeat
-          border-radius: rem(10)
-          +shadow-level(2)
-
         .short_url
           display: block
           font-family: $header-font
           font-size: 4rem
           font-weight: $header-font-weight
+
+        @if $qrcode
+          .qrcode
+            width: $qrcode-container-size
+            height: $qrcode-container-size
+            +retina-image('qr', $qrcode-size $qrcode-size, $asset-pipeline: true)
+            background-size: $qrcode-size $qrcode-size
+            background-position: center
+            background-repeat: no-repeat
+            border-radius: rem(10)
+            +shadow-level(2)
 
     .logos
       position: absolute
