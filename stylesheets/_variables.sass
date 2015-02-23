@@ -2,13 +2,16 @@
 // Color Palette
 //
 
-$primary-palette: Indigo
-$accent-palette: Pink
+$primary-palette: Indigo !default
+$accent-palette: Pink !default
 
-@function color($shade: 500)
+$primary-shade: 500 !default
+$accent-shade: 500 !default
+
+@function color($shade: $primary-shade)
   @return palette($primary-palette, $shade)
 
-@function accent($shade: 500)
+@function accent($shade: $accent-shade)
   @return palette($accent-palette, $shade)
 
 @function black($shade: 500)
