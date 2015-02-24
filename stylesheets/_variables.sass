@@ -37,6 +37,7 @@ $image-path: 'deck.js-material/images' !default
 $background-color: color(50) !default
 $anchor-color: color() !default
 $anchor-color-hover: accent() !default
+$loader-color: accent() !default
 
 $header-font: $font-roboto !default
 $header-font-weight: 300 !default
@@ -68,3 +69,13 @@ $qrcode-container-size: $qrcode-size - 10px !default
 $medium: 'only screen and (min-width: 641px)' !default
 $xga: 'only screen and (min-width: 1024px)' !default
 $wxga: 'only screen and (min-width: 1280px)' !default
+
+//
+// Convenience Mixins
+//
+
+=background-color
+  background-color: $background-color
+
+=loader-color
+  stroke: $loader-color
