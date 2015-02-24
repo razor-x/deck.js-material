@@ -16,7 +16,7 @@ a
 button
   +material-button
 
-article.deck-container
+#{$deck-container}
   font-family: $slide-font-mobile
   background-color: $background-color
   color: $slide-color
@@ -58,7 +58,7 @@ article.deck-container
         right: $side-margin
         font-size: 3rem
 
-  header.slide, footer.slide
+  #{$deck-header}, #{$deck-footer}
     display: flex
     flex-direction: column
     align-items: center
