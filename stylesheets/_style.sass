@@ -124,9 +124,19 @@ article.deck-container
             +shadow-level(2)
 
     .logos
+      display: flex
       position: absolute
       bottom: $bottom-margin
-      right: $side-margin
+      width: 100vh
+      justify-content: center
+
+      @media #{$xga}
+        right: $side-margin
+        width: auto
+
+    @each $logo, $info in $logos
+      .logo-#{$logo}
+        +logo($info...)
 
 //
 // Deck UI
