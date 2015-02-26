@@ -58,6 +58,11 @@ button
         right: $side-margin
         font-size: 3rem
 
+  .slide
+    .figure
+      +shadow-level($figure-shadow)
+      border-radius: $figure-border-radius
+
   #{$deck-header}, #{$deck-footer}
     display: flex
     flex-direction: column
