@@ -61,6 +61,12 @@ button
         right: $side-margin
         font-size: 3rem
 
+  p, ul, ol
+    @media #{$xga}
+      margin-left: initial
+      font-size: $slide-font-size
+      list-style-position: inside
+
   figure
     +shadow-level($figure-shadow)
     padding: $figure-padding
