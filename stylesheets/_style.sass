@@ -65,6 +65,13 @@ button
   .slide .content
     +outer-container
 
+    @media #{$xga}
+      padding-left: $side-margin
+      padding-right: $side-margin
+
+      .half
+        +span-columns(6)
+
   #{$deck-header}, #{$deck-footer}
     display: flex
     flex-direction: column
