@@ -35,6 +35,7 @@ button
     color: $deck-title-color
 
     @media #{$xga}
+      width: auto
       font-size: 4rem
 
   h2
@@ -83,12 +84,16 @@ button
       position: initial
 
     ul.authors, ul.colophon
+      width: 100wv
       margin: 0
       text-align: center
       list-style-type: none
       font-family: $author-font
       font-weight: $author-font-weight
       color: $author-color
+
+      @media #{$xga}
+        width: auto
 
       li
         padding: 0
