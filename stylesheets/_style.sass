@@ -40,7 +40,7 @@ button
 
   h2
     position: relative
-    padding-left: rem(5)
+    padding-left: 2.5 * $side-margin
     padding-top: initial
     background-color: $slide-title-background
     border: none
@@ -48,6 +48,7 @@ button
     +shadow-level(1)
 
     @media #{$xga}
+      padding-left: $side-margin
       font-size: 3.5rem
 
     &::after
@@ -163,8 +164,8 @@ button
 
 .deck-status
   position: absolute
-  top: rem(2)
-  right: $side-margin + rem(35)
+  top: 0
+  left: rem(2)
   z-index: 50
   +slide-title-style
 
