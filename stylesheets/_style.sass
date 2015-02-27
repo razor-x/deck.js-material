@@ -79,8 +79,26 @@ button
       padding-left: $side-margin
       padding-right: $side-margin
 
+      .full
+        +span-columns(12)
+
       .half
         +span-columns(6)
+
+        &.center
+          +shift(3)
+
+      .one-third
+        +span-columns(4)
+
+        &.center
+          +shift(4)
+
+      .two-thirds
+        +span-columns(8)
+
+        &.center
+          +shift(2)
 
   #{$deck-header}, #{$deck-footer}
     display: flex
