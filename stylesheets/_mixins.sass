@@ -37,9 +37,12 @@
   @media #{$wxga}
     +rescale-background($scale-wxga, $width, $height)
 
-=logo($src, $ratio, $type)
+=logo($src, $height, $ratio, $type)
   @if $type == 'svg'
-    +vector-img($src, 50px, $ratio)
+    +vector-img("#{$src}.svg", $height, $ratio)
+
+  @if $type == 'png'
+    +background-image($src, $height, $ratio * $height)
 
 =slide-title-style
   font-family: $header-font
