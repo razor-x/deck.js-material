@@ -159,12 +159,9 @@ button
 
         @if $qrcode
           .qrcode
+            +background-image('qr', $qrcode-size, $qrcode-size)
             width: $qrcode-container-size
             height: $qrcode-container-size
-            +retina-image('qr', $qrcode-size $qrcode-size, $asset-pipeline: true)
-            background-size: $qrcode-size $qrcode-size
-            background-position: center
-            background-repeat: no-repeat
             border-radius: rem(10)
             +shadow-level(2)
 
