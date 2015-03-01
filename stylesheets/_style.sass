@@ -65,7 +65,6 @@ button
     @media #{$xga}
       margin-left: initial
       font-size: $slide-font-size
-      list-style-position: inside
 
   figure
     +shadow-level($figure-shadow)
@@ -78,6 +77,10 @@ button
     @media #{$xga}
       padding-left: $side-margin
       padding-right: $side-margin
+
+      ul, ol
+        &.center
+          list-style-position: inside
 
       .full
         +span-columns(12)
