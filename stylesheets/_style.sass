@@ -61,7 +61,11 @@ button
         right: $side-margin
         font-size: 3rem
 
-  h3, p, ul, ol
+  h3
+    @media #{$xga}
+      font-size: (5 / 3) * $slide-font-size
+
+  p, ul, ol
     @media #{$xga}
       margin-left: initial
       font-size: $slide-font-size
