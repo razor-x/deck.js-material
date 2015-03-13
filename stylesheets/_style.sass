@@ -94,6 +94,13 @@ button
       ul, ol
         padding-left: 2rem
 
+        &.inline
+          list-style: none
+
+          li
+            display: inline-block
+            margin-right: 2rem
+
       @each $tag in p, ol, ul
         @media #{$xga}
           #{$tag}.small
