@@ -32,12 +32,12 @@ button
   h1
     top: 30vh
     width: 100vw
-    font-size: 2rem
+    font-size: $deck-title-font-size-mobile
     color: $deck-title-color
 
     @media #{$xga}
       width: auto
-      font-size: 4rem
+      font-size: $deck-title-font-size
 
   h2
     position: relative
@@ -50,7 +50,7 @@ button
 
     @media #{$xga}
       padding-left: $side-margin
-      font-size: 3.5rem
+      font-size: $slide-title-font-size
 
     &::after
       display: none
@@ -60,7 +60,7 @@ button
         position: absolute
         bottom: rem(5)
         right: $side-margin
-        font-size: 3rem
+        font-size: (6 / 7) * $slide-title-font-size
 
   h3
     @media #{$xga}
@@ -86,6 +86,14 @@ button
 
       ul, ol
         padding-left: 2rem
+
+      @each $tag in p, ol, ul
+        @media #{$xga}
+          #{$tag}.small
+            font-size: $slide-font-size-small
+
+          #{$tag}.large
+            font-size: $slide-font-size-large
 
       .full
         +span-columns(12)
@@ -144,19 +152,19 @@ button
         color: $author-color
 
       .author
-        font-size: 2rem
+        font-size: $author-font-size-mobile
 
         @media #{$xga}
-          font-size: 4rem
+          font-size: $author-font-size
 
       .connector
-        font-size: 1.5rem
+        font-size: (3 / 8) * $author-font-size
 
       .coauthor
-        font-size: 2rem
+        font-size: $coauthor-font-size-mobile
 
         @media #{$xga}
-          font-size: 2.5rem
+          font-size: $coauthor-font-size
 
     .url
       display: none
@@ -170,7 +178,7 @@ button
         .short_url
           display: block
           font-family: $header-font
-          font-size: 4rem
+          font-size: $deck-title-font-size
           font-weight: $header-font-weight
 
         @if $qrcode
