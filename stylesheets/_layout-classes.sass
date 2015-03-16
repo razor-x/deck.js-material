@@ -1,29 +1,75 @@
+//
+// Layout Mixins
+//
+
+=small
+  font-size: $slide-font-size-small
+
+=large
+  font-size: $slide-font-size-large
+
+=full($center: false)
+  +span-columns(12)
+
+  @if $center
+    text-align: center
+
+=half($center: false)
+  +span-columns(6)
+
+  @if $center
+    +shift(3)
+
+=one-third($center: false)
+  +span-columns(4)
+
+  @if $center
+    +shift(4)
+
+=two-thirds($center: false)
+  +span-columns(8)
+
+  @if $center
+    +shift(2)
+
+=one-forth
+  +span-columns(3)
+
+=three-forths
+  +span-columns(9)
+
+//
+// Layout Classes
+//
+
+#{$deck-container} .slide .content
+  +outer-container
+
+  @media #{$xga-up}
+    padding-left: $side-margin
+    padding-right: $side-margin
+
+    ul, ol
+      padding-left: 2rem
+
+      &.inline
+        list-style: none
+
+        li
+          display: inline-block
+          margin-right: 2rem
+
 =layout-classes
   #{$deck-container} .slide .content
-    +outer-container
+    @each $tag in p, ol, ul
+      @media #{$xga-up}
+        #{$tag}.small
+          font-size: $slide-font-size-small
+
+        #{$tag}.large
+          font-size: $slide-font-size-large
 
     @media #{$xga-up}
-      padding-left: $side-margin
-      padding-right: $side-margin
-
-      ul, ol
-        padding-left: 2rem
-
-        &.inline
-          list-style: none
-
-          li
-            display: inline-block
-            margin-right: 2rem
-
-      @each $tag in p, ol, ul
-        @media #{$xga-up}
-          #{$tag}.small
-            font-size: $slide-font-size-small
-
-          #{$tag}.large
-            font-size: $slide-font-size-large
-
       .right
         text-align: right
 
