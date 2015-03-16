@@ -17,13 +17,13 @@ button
   +material-button
 
 #{$deck-container}
-  font-family: $slide-font-mobile
+  font-family: $slide-font
   background-color: $background-color
   color: $slide-color
 
   @media #{$xga-up}
     overflow-y: hidden
-    font-family: $slide-font
+    font-family: $slide-font-xga
 
   h1, h2, h3, h4, h5, h6
     font-family: $header-font
@@ -32,12 +32,12 @@ button
   h1
     top: 30vh
     width: 100vw
-    font-size: $deck-title-font-size-mobile
+    font-size: $deck-title-font-size
     color: $deck-title-color
 
     @media #{$xga-up}
       width: auto
-      font-size: $deck-title-font-size
+      font-size: $deck-title-font-size-xga
 
   h2
     position: relative
