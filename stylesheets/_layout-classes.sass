@@ -8,6 +8,13 @@
 =large
   font-size: $slide-font-size-large
 
+=inline
+  list-style: none
+
+  li
+    display: inline-block
+    margin-right: 2rem
+
 =full($center: false)
   +span-columns(12)
 
@@ -53,11 +60,7 @@
       padding-left: 2rem
 
       &.inline
-        list-style: none
-
-        li
-          display: inline-block
-          margin-right: 2rem
+        +inline
 
 =layout-classes
   #{$deck-container} .slide .content
