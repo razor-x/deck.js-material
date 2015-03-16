@@ -31,10 +31,10 @@
   background-position: center
   background-repeat: no-repeat
 
-  @media #{$xga}
+  @media #{$xga-up}
     +rescale-background($scale-xga, $width, $height)
 
-  @media #{$wxga}
+  @media #{$wxga-up}
     +rescale-background($scale-wxga, $width, $height)
 
 =logo($src, $height, $ratio, $type)

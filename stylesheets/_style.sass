@@ -21,7 +21,7 @@ button
   background-color: $background-color
   color: $slide-color
 
-  @media #{$xga}
+  @media #{$xga-up}
     overflow-y: hidden
     font-family: $slide-font
 
@@ -35,7 +35,7 @@ button
     font-size: $deck-title-font-size-mobile
     color: $deck-title-color
 
-    @media #{$xga}
+    @media #{$xga-up}
       width: auto
       font-size: $deck-title-font-size
 
@@ -48,14 +48,14 @@ button
     +slide-title-style
     +shadow-level(1)
 
-    @media #{$xga}
+    @media #{$xga-up}
       padding-left: $side-margin
       font-size: $slide-title-font-size
 
     &::after
       display: none
 
-      @media #{$xga}
+      @media #{$xga-up}
         display: inline
         position: absolute
         bottom: rem(5)
@@ -63,11 +63,11 @@ button
         font-size: (6 / 7) * $slide-title-font-size
 
   h3
-    @media #{$xga}
+    @media #{$xga-up}
       font-size: (5 / 3) * $slide-font-size
 
   p, ul, ol
-    @media #{$xga}
+    @media #{$xga-up}
       margin-left: initial
       font-size: $slide-font-size
 
@@ -90,7 +90,7 @@ button
   .slide .content
     +outer-container
 
-    @media #{$xga}
+    @media #{$xga-up}
       padding-left: $side-margin
       padding-right: $side-margin
 
@@ -105,7 +105,7 @@ button
             margin-right: 2rem
 
       @each $tag in p, ol, ul
-        @media #{$xga}
+        @media #{$xga-up}
           #{$tag}.small
             font-size: $slide-font-size-small
 
@@ -153,7 +153,7 @@ button
     flex-direction: column
     justify-content: center
 
-    @media #{$xga}
+    @media #{$xga-up}
       align-items: center
 
     h1
@@ -168,7 +168,7 @@ button
       font-weight: $author-font-weight
       color: $author-color
 
-      @media #{$xga}
+      @media #{$xga-up}
         width: auto
 
       li
@@ -180,7 +180,7 @@ button
       .author
         font-size: $author-font-size-mobile
 
-        @media #{$xga}
+        @media #{$xga-up}
           font-size: $author-font-size
 
       .connector
@@ -189,13 +189,13 @@ button
       .coauthor
         font-size: $coauthor-font-size-mobile
 
-        @media #{$xga}
+        @media #{$xga-up}
           font-size: $coauthor-font-size
 
     .url
       display: none
 
-      @media #{$xga}
+      @media #{$xga-up}
         display: block
         position: absolute
         bottom: $bottom-margin
@@ -222,7 +222,7 @@ button
       bottom: $bottom-margin
       width: 100vw
 
-      @media #{$xga}
+      @media #{$xga-up}
         right: $side-margin
         width: auto
 
@@ -231,7 +231,7 @@ button
         +logo($info...)
 
     ul.colophon
-      @media #{$xga}
+      @media #{$xga-up}
         font-size: $colophon-font-size
 
 //
@@ -245,7 +245,7 @@ button
   z-index: 50
   +slide-title-style
 
-  @media #{$xga}
+  @media #{$xga-up}
     top: initial
     left: initial
     right: $side-margin
@@ -259,7 +259,7 @@ button
   z-index: 50
   +vector-img("#{$image-path}/ic_description_48px-white.svg", 25px)
 
-  @media #{$xga}
+  @media #{$xga-up}
     top: initial
     left: $side-margin
     bottom: $bottom-margin
