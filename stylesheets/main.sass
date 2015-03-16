@@ -12,7 +12,11 @@
 @import variables
 @import mixins
 @import style
+@import slide-styles
 @import layout-classes
+
+@if $include-layout-classes
+  +layout-classes
 
 @if $include-header-footer-style
   +header-footer-style
