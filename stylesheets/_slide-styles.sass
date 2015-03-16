@@ -1,0 +1,87 @@
+=header-footer-style
+  #{$deck-container} #{$deck-header},
+  #{$deck-container} #{$deck-footer}
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    @media #{$xga-up}
+      align-items: center
+
+    h1
+      position: initial
+
+    ul.authors, ul.colophon
+      width: 100wv
+      margin: 0
+      text-align: center
+      list-style-type: none
+      font-family: $author-font
+      font-weight: $author-font-weight
+      color: $author-color
+
+      @media #{$xga-up}
+        width: auto
+
+      li
+        padding: 0
+
+      a
+        color: $author-color
+
+      .author
+        font-size: $author-font-size-mobile
+
+        @media #{$xga-up}
+          font-size: $author-font-size
+
+      .connector
+        font-size: (3 / 8) * $author-font-size
+
+      .coauthor
+        font-size: $coauthor-font-size-mobile
+
+        @media #{$xga-up}
+          font-size: $coauthor-font-size
+
+    .url
+      display: none
+
+      @media #{$xga-up}
+        display: block
+        position: absolute
+        bottom: $bottom-margin
+        left: $side-margin
+
+        .short_url
+          display: block
+          font-family: $header-font
+          font-size: $deck-title-font-size
+          font-weight: $header-font-weight
+
+        @if $qrcode
+          .qrcode
+            +background-image('qr', $qrcode-size, $qrcode-size)
+            width: $qrcode-container-size
+            height: $qrcode-container-size
+            border-radius: rem(10)
+            +shadow-level(2)
+
+    .logos
+      display: flex
+      justify-content: center
+      position: absolute
+      bottom: $bottom-margin
+      width: 100vw
+
+      @media #{$xga-up}
+        right: $side-margin
+        width: auto
+
+    @each $logo, $info in $logos
+      .logo-#{$logo}
+        +logo($info...)
+
+    ul.colophon
+      @media #{$xga-up}
+        font-size: $colophon-font-size
