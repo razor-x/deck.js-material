@@ -38,6 +38,9 @@
       .connector
         font-size: (3 / 8) * $author-font-size
 
+        @media #{$xga-up}
+          font-size: (3 / 8) * $author-font-size-xga
+
       .coauthor
         font-size: $coauthor-font-size
 
@@ -56,7 +59,7 @@
         .short_url
           display: block
           font-family: $header-font
-          font-size: $deck-title-font-size
+          font-size: $deck-title-font-size-xga
           font-weight: $header-font-weight
 
         @if $qrcode
