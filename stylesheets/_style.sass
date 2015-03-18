@@ -66,6 +66,10 @@ button
     @media #{$xga-up}
       font-size: (5 / 3) * $slide-font-size
 
+  ul, ol
+    @media #{$xga-up}
+      padding-left: 2rem
+
   p, ul, ol
     @media #{$xga-up}
       margin-left: initial
@@ -82,6 +86,15 @@ button
 
   cite
     font-size: $slide-font-size-small
+
+  .slide .content
+    +outer-container
+    padding-left: $content-padding
+    padding-right: $content-padding
+
+    @media #{$xga-up}
+      padding-left: $side-margin
+      padding-right: $side-margin
 
   div.MathJax_Display
     overflow-x: auto

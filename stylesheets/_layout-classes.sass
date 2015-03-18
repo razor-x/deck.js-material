@@ -49,21 +49,12 @@
 // Layout Classes
 //
 
-#{$deck-container} .slide .content
-  +outer-container
-
-  @media #{$xga-up}
-    padding-left: $side-margin
-    padding-right: $side-margin
-
+=layout-classes
+  #{$deck-container} .slide .content
     ul, ol
-      padding-left: 2rem
-
       &.inline
         +inline
 
-=layout-classes
-  #{$deck-container} .slide .content
     @each $tag in p, ol, ul
       @media #{$xga-up}
         #{$tag}.small
