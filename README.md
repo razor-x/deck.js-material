@@ -1,7 +1,7 @@
 # deck.js Material Theme
 
 [![Bower Version](https://img.shields.io/bower/v/deck.js-material.svg)](http://bower.io/search/?q=deck.js-material)
-[![MIT License](https://img.shields.io/badge/license-MIT-red.svg)](./LICENSE.txt)
+[![MIT License](https://img.shields.io/github/license/razor-x/deck.js-material.svg)](./LICENSE.txt)
 [![Dependency Status](https://img.shields.io/gemnasium/razor-x/deck.js-material.svg)](https://gemnasium.com/razor-x/deck.js-material)
 [![Build Status](https://img.shields.io/travis/razor-x/deck.js-material.svg)](https://travis-ci.org/razor-x/deck.js-material)
 
