@@ -33,6 +33,6 @@
   "dependencies": {
     "google-material-color": "1.2.2",
     "paper-shadows": "1.0.0",
-    "material-design-icons": "~1.0.1"
+    "material-design-icons": "1.0.1"
   }
 }
