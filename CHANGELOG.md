@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.1.0
 
 - Fix how Node is handled on Travis.
 - Bump dependency versions.
