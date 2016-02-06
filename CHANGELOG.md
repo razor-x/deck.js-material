@@ -1,6 +1,6 @@
 # Changelog
 
-## HEAD
+## 1.0.0
 
 - Major reorganization and additions to styles.
 
