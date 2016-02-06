@@ -31,8 +31,8 @@
     "neat": "~1.7.1"
   },
   "dependencies": {
-    "google-material-color": "1.2.2",
+    "google-material-color": "1.2.6",
     "paper-shadows": "1.0.0",
-    "material-design-icons": "1.0.1"
+    "material-design-icons": "2.1.3"
   }
 }
