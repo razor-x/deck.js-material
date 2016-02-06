@@ -2,6 +2,7 @@
 
 ## HEAD
 
+- Fix how Node is handled on Travis.
 - Bump dependency versions.
 
 ## 1.0.0

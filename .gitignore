@@ -49,6 +49,10 @@ Gemfile.lock
 ## Bower:
 bower_components/
 
+## Node
+npm-debug.log
+node_modules/
+
 ## Sass
 .sass-cache/
 

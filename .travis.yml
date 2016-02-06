@@ -1,15 +1,18 @@
 ---
-language: [ ruby, node_js ]
-rvm: [ 2.2.0 ]
-node_js: [ 0.10 ]
-cache: bundler
+language: ruby
 sudo: false
-
-before_script:
-  - npm install bower -g
-  - bower install
+rvm: 2
+cache:
+  bundler: true
+  directories:
+    - bower_components
+    - node_modules
 
 before_install:
+  - nvm install
   - 'echo ''gem: --no-document'' > ~/.gemrc'
+
+before_script:
+  - npm install
 
 script: bundle exec rake travis
